@@ -20,15 +20,9 @@
         <header class="header">
           <div class="logo-wrapper">
             <img src="static/images/Jorim-Logo.png" class="logo-img" />
-            <span class="logo-text">Intern Learn Path</span>
+            <span class="logo-text">Internship Learn Path</span>
           </div>
           <div class="nav-container">
-            <nav class="nav-links">
-              <a href="#" class="nav-link active">Home</a>
-              <a href="#" class="nav-link">Browse Roles</a>
-              <a href="#" class="nav-link">Resources</a>
-              <a href="#" class="nav-link">Contact</a>
-            </nav>
             <!-- Theme Toggle Button -->
             <button
               class="theme-toggle"
@@ -112,10 +106,7 @@
         {% if data %}
         <div class="results-section">
           <div class="results-header">
-            <h2 class="results-title">
-              <i class="fas fa-compass"></i>
-              Your Learning Journey
-            </h2>
+           
             <p class="results-count">
               {{ data|length }} path(s) found for your selection
             </p>
@@ -431,7 +422,7 @@
 
       .container {
         max-width: 1400px;
-        margin: 0 auto;
+        margin: -46px auto;
         padding: 20px 40px;
       }
 
@@ -504,25 +495,31 @@
       /* Hero Section */
       .hero-section {
         text-align: center;
-        margin-bottom: 60px;
+        margin-bottom: 0px;
       }
 
       .hero-title {
         font-size: 56px;
         font-weight: 800;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
         animation: fadeInUp 0.8s ease;
       }
-
       .gradient-text {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        position: relative;
+        top: -70px;
+        transform: translateY(-3px); /* adjust value */
       }
-
       .hero-subtitle {
         font-size: 18px;
         margin-bottom: 40px;
+        position: relative;
+        top: -70px;
       }
 
       /* Stats Section */
@@ -532,6 +529,8 @@
         gap: 60px;
         margin-top: 40px;
         flex-wrap: wrap;
+        position: relative;
+        top: -80px;
       }
 
       .stat-item {
@@ -555,6 +554,8 @@
         backdrop-filter: blur(10px);
         border-radius: 20px;
         padding: 40px;
+        position: relative;
+        top: -59px;
         margin-bottom: 60px;
       }
 
@@ -615,6 +616,8 @@
       /* Results Section */
       .results-section {
         margin-top: 40px;
+        position: relative;
+        top: -147px;
       }
 
       .results-header {
@@ -628,6 +631,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+        top: -120px;
         gap: 10px;
       }
 
